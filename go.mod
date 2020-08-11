@@ -11,8 +11,10 @@ require (
 	github.com/cockroachdb/cockroach-go v2.0.1+incompatible // indirect
 	github.com/cznic/mathutil v0.0.0-20181122101859-297441e03548 // indirect
 	github.com/edsrzf/mmap-go v1.0.0 // indirect
-	github.com/go-sql-driver/mysql v1.5.0 // indirect
+	github.com/go-chi/chi v4.1.2+incompatible
+	github.com/go-sql-driver/mysql v1.5.0
 	github.com/gocql/gocql v0.0.0-20200624222514-34081eda590e // indirect
+	github.com/golang-migrate/migrate v3.5.4+incompatible
 	github.com/golang-migrate/migrate/v4 v4.12.2 // indirect
 	github.com/google/flatbuffers v1.12.0 // indirect
 	github.com/hashicorp/go-retryablehttp v0.6.7 // indirect
