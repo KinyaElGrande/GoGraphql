@@ -10,6 +10,7 @@ require (
 	github.com/aws/aws-sdk-go v1.34.0 // indirect
 	github.com/cockroachdb/cockroach-go v2.0.1+incompatible // indirect
 	github.com/cznic/mathutil v0.0.0-20181122101859-297441e03548 // indirect
+	github.com/dgrijalva/jwt-go v3.2.0+incompatible
 	github.com/edsrzf/mmap-go v1.0.0 // indirect
 	github.com/go-chi/chi v4.1.2+incompatible
 	github.com/go-sql-driver/mysql v1.5.0
