@@ -15,7 +15,7 @@ var Db *sql.DB
 
 //InitDB Function creates a connection to the Database
 func InitDB() {
-	db, err := sql.Open("mysql", "elgrande:passwordhere@tcp(localhost)/Gograph")
+	db, err := sql.Open("mysql", "elgrande:password123@tcp(localhost)/Gograph")
 	if err != nil {
 		log.Panic(err)
 	}
