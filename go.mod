@@ -31,7 +31,7 @@ require (
 	github.com/vektah/gqlparser/v2 v2.0.1
 	github.com/xanzy/go-gitlab v0.34.2 // indirect
 	go.mongodb.org/mongo-driver v1.4.0 // indirect
-	golang.org/x/crypto v0.0.0-20200728195943-123391ffb6de // indirect
+	golang.org/x/crypto v0.0.0-20200728195943-123391ffb6de
 	golang.org/x/sys v0.0.0-20200810151505-1b9f1253b3ed // indirect
 	golang.org/x/tools v0.0.0-20200810160612-ace63f8701f5 // indirect
 	google.golang.org/genproto v0.0.0-20200808173500-a06252235341 // indirect
