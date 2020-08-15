@@ -9,8 +9,9 @@ import (
 	"github.com/99designs/gqlgen/graphql/playground"
 	"github.com/KinyaElGrande/GraphQL-example/graph"
 	"github.com/KinyaElGrande/GraphQL-example/graph/generated"
+	"github.com/KinyaElGrande/GraphQL-example/internal/auth"
 	database "github.com/KinyaElGrande/GraphQL-example/internal/pkg/db/migrations/mysql"
-	// "github.com/go-chi/chi"
+	"github.com/go-chi/chi"
 )
 
 const defaultPort = "8080"
@@ -24,6 +25,9 @@ func main() {
 	database.InitDB()
 	database.Migrate()
 
+	r := chi.NewRouter()
+
+	r.Use(auth.Middleware())
 	srv := handler.NewDefaultServer(generated.NewExecutableSchema(generated.Config{Resolvers: &graph.Resolver{}}))
 
 	http.Handle("/", playground.Handler("GraphQL playground", "/query"))
